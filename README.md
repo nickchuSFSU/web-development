@@ -2,7 +2,7 @@
 
 ## You must fill out the information below. Failure to do so will result in 0s for the assignments
 
-## Please do not modify the format of the student information below. When entering Student IDs please do not add any addition characters. Digits ONLY please. Please keep the space around the colon
+## Please do not modify the format of the student information below. When entering Student IDs please do not add any additional characters. Digits ONLY please. Please keep the space around the colon
 
 ## Student Name  : Name here
 
