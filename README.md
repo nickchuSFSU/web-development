@@ -4,11 +4,11 @@
 
 ## Please do not modify the format of the student information below. When entering Student IDs please do not add any additional characters. Digits ONLY please. Please keep the space around the colon
 
-## Student Name  : Name here
+## Student Name  : Maria Luciana Seljak
 
-## Student ID    : ID here
+## Student ID    : 915736307
 
-## Student Email : Email here
+## Student Email : mseljak@mail.sfsu.edu
 
 ## Purpose of Repository
 
