@@ -5,6 +5,24 @@
     <title>Post Images</title>
 </head>
 <body>
+<form method="POST">
+    <fieldset>
+        <legend>Post image</legend>
+        <label for="ptitle">Post title</label>
+        <input type="text" id="ptitle" required placeholder="Post title"/>
 
+        <label for="pdescription">Post description</label>
+        <input type="text" id="pdescription" required placeholder="Post description"/>
+
+        <label for="img">Post image</label>
+        <input type="file" id="img" required alt="Post" accept="image/jpeg, image/png"/>
+    </fieldset>
+
+
+    <input type="checkbox" id="policy" required>
+    <label for="policy">I accept the Acceptable Use Policy for uploading images.</label>
+
+    <input type="submit" value="Submit">
+</form>
 </body>
 </html>
