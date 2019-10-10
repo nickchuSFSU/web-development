@@ -5,6 +5,29 @@
     <title>Account Registration</title>
 </head>
 <body>
+<form method="POST">
+    <fieldset>
+        <legend>Register account</legend>
+        <label for="uname">User Name</label>
+        <input type="text" id="uname" required placeholder="User Name"/>
 
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="Email"/>
+
+        <label for="psw">Password</label>
+        <input type="password" id="psw" required placeholder="Password"/>
+
+        <label for="cpsw">Confirm Password</label>
+        <input type="password" id="cpsw" required placeholder="Confirm Password"/>
+    </fieldset>
+
+    <label>
+        <input type="checkbox" required>
+    </label>I accept I am 13+ years of age.<br>
+    <label>
+        <input type="checkbox" required>
+    </label>I accept TOS and Privacy rules.<br>
+
+    <input type="submit" value="Submit">
 </body>
 </html>
