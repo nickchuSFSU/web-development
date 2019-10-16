@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Post Images</title>
+    <link rel="stylesheet" type="text/css" href="../css/formstyle.css">
 </head>
 <body>
+<div class="container">
 <form method="POST">
-    <fieldset>
-        <legend>Post image</legend>
+    <fieldset class="fieldset-form">
+        <legend class="page-title">Post image</legend>
         <label for="ptitle">Post title</label>
-        <input type="text" id="ptitle" required placeholder="Post title"/>
+        <input class="input-field" type="text" id="ptitle" required placeholder="Post title"/>
 
         <label for="pdescription">Post description</label>
-        <input type="text" id="pdescription" required placeholder="Post description"/>
+        <input class="input-field" type="text" id="pdescription" required placeholder="Post description"/>
 
         <label for="img">Post image</label>
         <input type="file" id="img" required alt="Post" accept="image/jpeg, image/png"/>
@@ -20,9 +22,10 @@
 
 
     <input type="checkbox" id="policy" required>
-    <label for="policy">I accept the Acceptable Use Policy for uploading images.</label>
+    <label class="radio-btn" for="policy">I accept the Acceptable Use Policy for uploading images.</label><br/>
 
-    <input type="submit" value="Submit">
+    <input class="button" type="submit" value="Submit">
 </form>
+</div>
 </body>
 </html>
