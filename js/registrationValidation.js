@@ -1,25 +1,27 @@
 validateRegistration = () => {
-    let uname = document.forms["registration"]["username"].value();
-    let psw = document.forms["registration"]["inputpsw"].value();
-    let cpsw = document.forms["registration"]["inputcpsw"].value();
+    let input = document.forms["registration"]["username"].value;
+    let psw = document.forms["registration"]["inputpsw"].value;
+    let confirmpsw = document.forms["registration"]["inputcpsw"].value;
+    var regex = /^(?=.*[0-9])(?=.*[*!@#$^&])[a-zA-Z0-9!@#$%^&*]{8,}$/;
 
-    if(uname.length < 3){
+
+    if(input.length < 3){
         window.alert("Username must be 3 or more alphanumeric characters.");
-        uname.focus();
+        input.focus();
         return false;
     }
 
-    if(!psw.match(/^(?=.*\d)(?=.*[a-z])(?=.*[/* -!@#$^&])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/)){
-        alert("Password must be at least 8 characters long, contain at least one number, one uppercase and one special character")
+    if(!regex.test(psw)){
+        alert("Password must be at least 8 characters long, contain at least one number, one uppercase and one special character");
         psw.focus();
         return false;
     }
 
-    if (psw !== cpsw) {
+    if (psw !== confirmpsw) {
         alert ("\nPasswords did not match. Please try again.");
         return false;
     }
 
-    let myJSON = JSON.stringify(uname);
+    let myJSON = JSON.stringify(input);
     console.log(myJSON);
 };
