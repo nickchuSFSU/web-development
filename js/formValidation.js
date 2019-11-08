@@ -80,7 +80,15 @@ validatePost = () => {
     let post_description = document.forms["postImage"]["description"].value;
     let ele1 = "title";
     let ele2 = "description";
+    let image_file = document.getElementById('img');
+    let path = image_file.value;
+    let extensions = /(\.jpg|\.jpeg|\.png|\.bmp|\.gif)$/i;
 
     validateInput(post_title, ele1);
     validateInput(post_description, ele2);
+
+    if(!extensions.exec(path)){
+        alert("Not a valid image. Please upload images that are either jpg, png, bmp or gif");
+        return false;
+    }
 };
