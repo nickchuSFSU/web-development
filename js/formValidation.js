@@ -10,6 +10,14 @@ validateUser = (string) => {
     }
 };
 
+validateInput = (string, obj) => {
+    if(string === ''){
+        window.alert("Please enter a " + obj);
+        string.focus();
+        return false;
+    }
+};
+
 /*
     Function that validates the login of the new user.
     It requires the user to input a username with at least 3 characters and it also
@@ -59,4 +67,20 @@ validateRegistration = () => {
 
     let myJSON = JSON.stringify(input);
     console.log(myJSON);
+};
+
+/*
+    This function validates when a registered user posts an image.
+    It requires the user to enter text for the title and for the description;
+    it also requires to only upload images that are jpg, png, bmp, gif
+ */
+
+validatePost = () => {
+    let post_title = document.forms["postImage"]["title"].value;
+    let post_description = document.forms["postImage"]["description"].value;
+    let ele1 = "title";
+    let ele2 = "description";
+
+    validateInput(post_title, ele1);
+    validateInput(post_description, ele2);
 };
