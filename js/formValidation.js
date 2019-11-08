@@ -91,4 +91,7 @@ validatePost = () => {
         alert("Not a valid image. Please upload images that are either jpg, png, bmp or gif");
         return false;
     }
+
+    let myJSON = JSON.stringify(path);
+    console.log(myJSON);
 };
